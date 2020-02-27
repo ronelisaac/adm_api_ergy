@@ -1,0 +1,272 @@
+@charset "utf-8";
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+@font-face {
+  font-family: roboto-regular;
+  src: url(../fonts/roboto-regular.ttf);
+}
+@font-face {
+  font-family: roboto-md;
+  src: url(../fonts/roboto-medium.ttf);
+}
+@font-face {
+  font-family: roboto-li;
+  src: url(./fonts/roboto-light.ttf);
+}
+@font-face {
+  font-family: roboto-bold;
+  src: url(../fonts/roboto-bold.ttf);
+}
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+body {
+  background: #f3f3f3;
+  color: #606468;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-user-drag: none;
+  -webkit-font-smoothing: antialiased;
+  font-family: "roboto-li", sans-serif;  
+}
+
+
+.row {
+    width:98.5%;
+    float: left;
+    padding:10px;
+}
+
+.column,
+.columns {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.medium-1 {
+    width: 8.3333333333%;
+}
+.medium-2 {
+    width: 16.6666666667%;
+}
+.medium-3 {
+    width: 25%;
+}
+.medium-4 {
+    width: 33.3333333333%;
+}
+.medium-5 {
+    width: 41.6666666667%;
+}
+.medium-6 {
+    width: 50% !important;
+}
+.medium-7 {
+    width: 58.3333333333%;
+}
+.medium-8 {
+    width: 66.6666666667%;
+}
+.medium-9 {
+    width: 75%;
+}
+.medium-10 {
+    width: 83.3333333333%;
+}
+.medium-11 {
+    width: 91.6666666667%;
+}
+.medium-12 {
+    width: 100%;
+}
+@media only screen and (max-width: 1024px) {
+  .medium-2,.medium-3,.medium-4,.medium-5,.medium-6,.medium-7,.medium-8,.medium-9,.medium-10,.medium-11,.medium-12{
+    width:100% !important;
+  }
+  .row,.big-header{
+    width:95% !important;
+  }
+  .big-header > div{
+    width:99% !important;
+  }
+}
+@media  (min-width: 1025px) and (max-width: 1280px) {
+  .big-header > div{
+    width:99.6% !important;
+  }
+  .row,.big-header{
+    width:98% !important;
+  }
+}
+@media only screen and  (min-width: 1360px) {
+
+  .big-header > div{
+    width:99.5% !important;
+  }
+  .row,.big-header{
+    width:98% !important;
+  }
+}
+@media only screen and  (min-width: 1660px) {
+
+  .big-header > div{
+    width:99.8% !important;
+  }
+  .row,.big-header{
+    width:98% !important;
+  }
+}
+
+
+.string_input{
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    color: #333;
+    background-image: none;
+    font-family: 'Arial, Helvetica, sans-serif';
+    display: block;
+    padding: 0px 10px;
+    font-weight: 300;
+    color: #555;
+    padding:10px;
+    display: block;
+    background-color: #ccc;
+
+  margin-bottom:10px;
+  margin-top:5px; 
+}
+span{
+    font-weight:bold;
+}
+
+p{
+    padding:10px;
+    margin:0px;
+}
+h2{
+    padding: 0px 10px;
+    margin: 0px;
+    display: block;
+   
+    text-align: right;
+    font-size: 30px;
+    color: #555;
+    font-weight: bold;
+}
+.big-header {
+  display: block;
+  width: 99%;
+}
+
+.big-header > div {
+  position: absolute;
+  width: 99.9%;
+  height: 150px;
+  top: 0px;
+  left: 0px;
+  background: #fff;
+  -webkit-box-shadow: 0 2px 3px rgba(57, 70, 78, 0.2);
+  box-shadow: 0 2px 3px rgba(57, 70, 78, 0.2);
+  padding:0 2px 0 0px;
+  text-align:center;
+}
+
+.big-header > div > img {
+  /*position: absolute;
+  top: 100%;*/
+  margin-top: 118px;
+  margin-left: auto;
+  /*width: {{(($styles['width_logo']*0.50) + $styles['width_logo'])}}px;*/
+  height: 105px;
+}
+
+.big-header > h1 {
+  margin-top:210px;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 35px;
+  font-family: "roboto-bold", sans-serif;  
+  line-height:1.2em; 
+  padding-top:4px;
+  padding-left:0.5px;
+  
+}
+.input-text {
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    font-size: 20px;
+    border: none;
+    color: #666;
+    background-image: none;
+    font-family: inherit;
+    background-color: #fff;
+    border-radius: 99px;
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    -webkit-box-shadow: 0 2px 3px rgba(57, 70, 78, 0.2);
+    box-shadow: 0 2px 3px rgba(57, 70, 78, 0.2);
+    font-weight: 300;
+    z-index: 1;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.button-inner {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.nu-btn {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: 0px;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  float: none;
+  vertical-align: middle;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius:20px;
+  text-align: center;
+  font-size: 17px;
+  color: #fff;
+  font-family: "roboto-regular";
+  height: 40px;
+  width: 100%;
+  line-height: 44px;
+  text-transform: uppercase;
+  -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0,0.5);
+-webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, .5);
+box-shadow: 1px 1px 4px rgba(0, 0, 0, .5);
+}
