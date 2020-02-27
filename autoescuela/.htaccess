@@ -1,0 +1,8 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^lobaton.esy.es/autoescuela/public$ [OR]
+
+RewriteCond %{HTTP_HOST} ^www.lobaton.esy.es/autoescuela/public$
+
+rewriterule ^(.*)$
+http://lobaton.esy.es/autoescuela/public
+[R=301,L]
